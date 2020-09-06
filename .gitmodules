@@ -1,3 +1,6 @@
 [submodule "web3-core-subscriptions"]
 	path = web3-core-subscriptions
 	url = https://github.com/deno-npm/npm_web3_core_subscriptions.git
+[submodule "web3-core-method"]
+	path = web3-core-method
+	url = https://github.com/deno-npm/web3-core-method
