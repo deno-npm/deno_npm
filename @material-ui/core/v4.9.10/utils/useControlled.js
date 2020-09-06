@@ -21,14 +21,10 @@ export default function useControlled(_ref) {
       console.error(
         [
           "Material-UI: a component is changing the ".concat(
-            isControlled
-              ? ""
-              : "un",
+            isControlled ? "" : "un",
             "controlled ",
           ).concat(state, " state of ").concat(name, " to be ").concat(
-            isControlled
-              ? "un"
-              : "",
+            isControlled ? "un" : "",
             "controlled.",
           ),
           "Elements should not switch from uncontrolled to controlled (or vice versa).",

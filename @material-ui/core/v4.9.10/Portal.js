@@ -93,9 +93,7 @@ Portal.propTypes = {
         PropTypes.func,
         PropTypes.instanceOf(React.Component),
         PropTypes.instanceOf(
-          typeof Element === "undefined"
-            ? Object
-            : Element,
+          typeof Element === "undefined" ? Object : Element,
         ),
       ],
     ),

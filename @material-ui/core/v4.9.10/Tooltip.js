@@ -599,9 +599,7 @@ var Tooltip = React.forwardRef(function Tooltip(props, ref) {
           ),
           placement: placement,
           anchorEl: childNode,
-          open: childNode
-            ? open
-            : false,
+          open: childNode ? open : false,
           id: childrenProps["aria-describedby"],
           transition: true,
         },

@@ -541,14 +541,12 @@ Popover.propTypes = {
    * horizontal: [left, center, right].
    */
   anchorOrigin: PropTypes.shape({
-    horizontal:
-      PropTypes.oneOfType(
-        [PropTypes.oneOf(["center", "left", "right"]), PropTypes.number],
-      ).isRequired,
-    vertical:
-      PropTypes.oneOfType(
-        [PropTypes.oneOf(["bottom", "center", "top"]), PropTypes.number],
-      ).isRequired,
+    horizontal: PropTypes.oneOfType(
+      [PropTypes.oneOf(["center", "left", "right"]), PropTypes.number],
+    ).isRequired,
+    vertical: PropTypes.oneOfType(
+      [PropTypes.oneOf(["bottom", "center", "top"]), PropTypes.number],
+    ).isRequired,
   }),
 
   /**
@@ -597,9 +595,7 @@ Popover.propTypes = {
         PropTypes.func,
         PropTypes.instanceOf(React.Component),
         PropTypes.instanceOf(
-          typeof Element === "undefined"
-            ? Object
-            : Element,
+          typeof Element === "undefined" ? Object : Element,
         ),
       ],
     ),
@@ -682,14 +678,12 @@ Popover.propTypes = {
    * horizontal: [left, center, right, x(px)].
    */
   transformOrigin: PropTypes.shape({
-    horizontal:
-      PropTypes.oneOfType(
-        [PropTypes.oneOf(["center", "left", "right"]), PropTypes.number],
-      ).isRequired,
-    vertical:
-      PropTypes.oneOfType(
-        [PropTypes.oneOf(["bottom", "center", "top"]), PropTypes.number],
-      ).isRequired,
+    horizontal: PropTypes.oneOfType(
+      [PropTypes.oneOf(["center", "left", "right"]), PropTypes.number],
+    ).isRequired,
+    vertical: PropTypes.oneOfType(
+      [PropTypes.oneOf(["bottom", "center", "top"]), PropTypes.number],
+    ).isRequired,
   }),
 
   /**

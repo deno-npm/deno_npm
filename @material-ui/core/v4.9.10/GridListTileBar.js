@@ -134,9 +134,11 @@ var GridListTileBar = React.forwardRef(function GridListTileBar(props, ref) {
       React.createElement("div", {
         className: classes.title,
       }, title),
-      subtitle ? /*#__PURE__*/ React.createElement("div", {
-        className: classes.subtitle,
-      }, subtitle) : null,
+      subtitle
+        ? /*#__PURE__*/ React.createElement("div", {
+          className: classes.subtitle,
+        }, subtitle)
+        : null,
     ),
     actionIcon
       ? /*#__PURE__*/ React.createElement("div", {

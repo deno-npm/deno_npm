@@ -130,9 +130,7 @@ var Checkbox = React.forwardRef(function Checkbox(props, ref) {
         "data-indeterminate": indeterminate,
       }, inputProps),
       icon: React.cloneElement(
-        indeterminate
-          ? indeterminateIcon
-          : icon,
+        indeterminate ? indeterminateIcon : icon,
         {
           fontSize: size === "small" ? "small" : "default",
         },

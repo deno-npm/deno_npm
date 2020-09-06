@@ -93,11 +93,10 @@ function handleContainer(containerInfo, props) {
     // https://css-tricks.com/snippets/css/force-vertical-scrollbar/
 
     var parent = container.parentElement;
-    var scrollContainer =
-      parent.nodeName === "HTML" &&
+    var scrollContainer = parent.nodeName === "HTML" &&
         window.getComputedStyle(parent)["overflow-y"] === "scroll"
-        ? parent
-        : container; // Block the scroll even if no scrollbar is visible to account for mobile keyboard
+      ? parent
+      : container; // Block the scroll even if no scrollbar is visible to account for mobile keyboard
     // screensize shrink.
 
     restoreStyle.push({

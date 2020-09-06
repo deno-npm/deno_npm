@@ -3,7 +3,7 @@ import * as rnd from "./test_utils/randomData.js";
 import * as rlp from "./src/rlp.js";
 import * as Nat from "./src/nat.js";
 import * as Account from "./src/account.js";
-import { generate } from "./src/array.js"
+import { generate } from "./src/array.js";
 import {
   keccak256,
 } from "./src/hash.js";
@@ -23,28 +23,28 @@ const generateBytes = () => {
   return "0x" + generate(
     (Math.random() * 16 | 0) * 2,
     () => (Math.random() * 16 | 0).toString(16),
-  ).join("")
+  ).join("");
 };
 
 const generateNBytes = (bytes) => {
   return "0x" + generate(
     bytes * 2,
-    () => (Math.random() * 16 | 0).toString(16)
+    () => (Math.random() * 16 | 0).toString(16),
   )
-  .join("");
+    .join("");
 };
 
 const generateByteTree = () => {
   let list = [];
   while (Math.random() < 0.8) {
-    if(Math.random() < 0.8){
+    if (Math.random() < 0.8) {
       list.push(generateBytes());
-    }else{
+    } else {
       list.push(generateByteTree());
     }
   }
   return list;
-}
+};
 
 Deno.test({
   name: "RLP operates identically to reference implementation",
@@ -183,7 +183,7 @@ Deno.test("Account must match expected values for complex pre-determined tests",
 });
 
 Deno.test("Account can recover the same address that signed", () => {
-  for(let x = 0; x < 32; x++){
+  for (let x = 0; x < 32; x++) {
     const signer_account = Account.create("");
     const hash = keccak256(generateBytes());
     const sign = Account.sign(hash, signer_account.privateKey, 0);
@@ -193,12 +193,11 @@ Deno.test("Account can recover the same address that signed", () => {
   }
 });
 
-
 Deno.test("Account must match the generated address with EthJS-account", () => {
-  for(let x = 0; x < 128; x++){
+  for (let x = 0; x < 128; x++) {
     const bytes = generateNBytes(32);
     const account = Account.fromPrivate(bytes);
     const ethjs_account = ethjs.account.privateToAccount(bytes);
     testing.assertEquals(account.address, ethjs_account.address);
-  };
+  }
 });

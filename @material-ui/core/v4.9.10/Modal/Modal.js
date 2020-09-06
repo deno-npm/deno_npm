@@ -310,8 +310,7 @@ var Modal = React.forwardRef(function Modal(inProps, ref) {
           ),
         },
       ),
-      hideBackdrop ? null
-      : /*#__PURE__*/ React.createElement(
+      hideBackdrop ? null : /*#__PURE__*/ React.createElement(
         BackdropComponent,
         _extends({
           open: open,

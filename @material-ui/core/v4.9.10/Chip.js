@@ -143,9 +143,8 @@ export var styles = function styles(theme) {
     outlined: {
       backgroundColor: "transparent",
       border: "1px solid ".concat(
-        theme.palette.type === "light"
-          ? "rgba(0, 0, 0, 0.23)"
-          : "rgba(255, 255, 255, 0.23)",
+        theme.palette.type === "light" ? "rgba(0, 0, 0, 0.23)"
+        : "rgba(255, 255, 255, 0.23)",
       ),
       "$clickable&:hover, $clickable&:focus, $deletable&:focus": {
         backgroundColor: fade(
@@ -408,9 +407,10 @@ var Chip = React.forwardRef(function Chip(props, ref) {
 
   if (onDelete) {
     var customClasses = clsx(
-      color !== "default" && (variant === "default"
-        ? classes["deleteIconColor".concat(capitalize(color))]
-        : classes["deleteIconOutlinedColor".concat(capitalize(color))]),
+      color !== "default" &&
+        (variant === "default"
+          ? classes["deleteIconColor".concat(capitalize(color))]
+          : classes["deleteIconOutlinedColor".concat(capitalize(color))]),
       small && classes.deleteIconSmall,
     );
     deleteIcon = deleteIconProp && React.isValidElement(deleteIconProp)

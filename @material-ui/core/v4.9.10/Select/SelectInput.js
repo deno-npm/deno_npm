@@ -331,9 +331,10 @@ var SelectInput = React.forwardRef(function SelectInput(props, ref) {
       selected: selected,
       value: undefined,
       // The value is most likely not a valid HTML attribute.
-      "data-value": child.props.value, // Instead, we provide it as a data attribute.
+      "data-value": child.props.value,
     });
-  });
+  } // Instead, we provide it as a data attribute.
+  );
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   React.useEffect(function () {
@@ -399,9 +400,7 @@ var SelectInput = React.forwardRef(function SelectInput(props, ref) {
           ref: setDisplayNode,
           tabIndex: tabIndex,
           role: "button",
-          "aria-disabled": disabled
-            ? "true"
-            : undefined,
+          "aria-disabled": disabled ? "true" : undefined,
           "aria-expanded": open ? "true" : undefined,
           "aria-haspopup": "listbox",
           "aria-label": ariaLabel,

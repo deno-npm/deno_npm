@@ -119,8 +119,9 @@ var ExpansionPanelSummary = React.forwardRef(
 
     var _React$useContext = React.useContext(ExpansionPanelContext),
       _React$useContext$dis = _React$useContext.disabled,
-      disabled = _React$useContext$dis === void 0 ? false
-      : _React$useContext$dis,
+      disabled = _React$useContext$dis === void 0
+        ? false
+        : _React$useContext$dis,
       expanded = _React$useContext.expanded,
       toggle = _React$useContext.toggle;
 

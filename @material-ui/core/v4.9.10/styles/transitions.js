@@ -111,9 +111,7 @@ export default {
             : formatMs(durationOption),
           " ",
         ).concat(easingOption, " ").concat(
-          typeof delay === "string"
-            ? delay
-            : formatMs(delay),
+          typeof delay === "string" ? delay : formatMs(delay),
         );
       },
     ).join(",");

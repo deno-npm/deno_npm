@@ -202,9 +202,7 @@ Menu.propTypes = {
       [
         PropTypes.func,
         PropTypes.instanceOf(
-          typeof Element === "undefined"
-            ? Object
-            : Element,
+          typeof Element === "undefined" ? Object : Element,
         ),
       ],
     ),

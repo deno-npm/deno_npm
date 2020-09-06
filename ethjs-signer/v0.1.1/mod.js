@@ -6,7 +6,7 @@ import {
   rlp,
 } from "./deps.js";
 
-const {Buffer} = BufferModule;
+const { Buffer } = BufferModule;
 Buffer._isBuffer = true;
 const keccak256 = jssha3.keccak_256;
 const secp256k1 = new (elliptic.ec)("secp256k1");

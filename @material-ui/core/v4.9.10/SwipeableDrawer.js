@@ -326,10 +326,9 @@ var SwipeableDrawer = React.forwardRef(function SwipeableDrawer(inProps, ref) {
 
     if (Math.abs(swipeInstance.current.velocity) > minFlingVelocity) {
       // Calculate transition duration to match swipe speed
-      calculatedDurationRef.current =
-        Math.abs(
-          (maxTranslate - currentTranslate) / swipeInstance.current.velocity,
-        ) * 1000;
+      calculatedDurationRef.current = Math.abs(
+        (maxTranslate - currentTranslate) / swipeInstance.current.velocity,
+      ) * 1000;
     }
 
     if (open) {
@@ -543,9 +542,8 @@ var SwipeableDrawer = React.forwardRef(function SwipeableDrawer(inProps, ref) {
     if (!open && paperRef.current) {
       // The ref may be null when a parent component updates while swiping.
       setPosition(
-        getMaxTranslate(horizontalSwipe, paperRef.current) + (disableDiscovery
-          ? 20
-          : -swipeAreaWidth),
+        getMaxTranslate(horizontalSwipe, paperRef.current) +
+          (disableDiscovery ? 20 : -swipeAreaWidth),
         {
           changeTransition: false,
         },

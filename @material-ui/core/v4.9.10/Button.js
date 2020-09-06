@@ -378,10 +378,8 @@ var Button = React.forwardRef(function Button(props, ref) {
         classes.root,
         classes[variant],
         className,
-        color === "inherit"
-          ? classes.colorInherit
-          : color !== "default" &&
-            classes["".concat(variant).concat(capitalize(color))],
+        color === "inherit" ? classes.colorInherit : color !== "default" &&
+          classes["".concat(variant).concat(capitalize(color))],
         size !== "medium" &&
           [
             classes["".concat(variant, "Size").concat(capitalize(size))],

@@ -228,17 +228,13 @@ var TouchRipple = React.forwardRef(function TouchRipple(props, ref) {
     } else {
       var sizeX = Math.max(
             Math.abs(
-              (element
-                ? element.clientWidth
-                : 0) - rippleX,
+              (element ? element.clientWidth : 0) - rippleX,
             ),
             rippleX,
           ) * 2 + 2;
       var sizeY = Math.max(
             Math.abs(
-              (element
-                ? element.clientHeight
-                : 0) - rippleY,
+              (element ? element.clientHeight : 0) - rippleY,
             ),
             rippleY,
           ) * 2 + 2;

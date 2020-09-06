@@ -174,9 +174,7 @@ var MenuList = React.forwardRef(function MenuList(props, ref) {
         ) {
           var scrollbarSize = "".concat(getScrollbarSize(true), "px");
           listRef.current.style[
-            theme.direction === "rtl"
-              ? "paddingLeft"
-              : "paddingRight"
+            theme.direction === "rtl" ? "paddingLeft" : "paddingRight"
           ] = scrollbarSize;
           listRef.current.style.width = "calc(100% + ".concat(
             scrollbarSize,

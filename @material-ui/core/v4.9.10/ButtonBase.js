@@ -374,9 +374,7 @@ var ButtonBase = React.forwardRef(function ButtonBase(props, ref) {
         onTouchMove: handleTouchMove,
         onTouchStart: handleTouchStart,
         ref: handleRef,
-        tabIndex: disabled
-          ? -1
-          : tabIndex,
+        tabIndex: disabled ? -1 : tabIndex,
       },
       buttonProps,
       other,

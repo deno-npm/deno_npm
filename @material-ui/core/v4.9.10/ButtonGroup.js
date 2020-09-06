@@ -84,9 +84,8 @@ export var styles = function styles(theme) {
     groupedTextVertical: {
       "&:not(:last-child)": {
         borderBottom: "1px solid ".concat(
-          theme.palette.type === "light"
-            ? "rgba(0, 0, 0, 0.23)"
-            : "rgba(255, 255, 255, 0.23)",
+          theme.palette.type === "light" ? "rgba(0, 0, 0, 0.23)"
+          : "rgba(255, 255, 255, 0.23)",
         ),
       },
     },
@@ -236,9 +235,7 @@ var ButtonGroup = React.forwardRef(function ButtonGroup(props, ref) {
     ],
     classes[
       "grouped".concat(capitalize(variant)).concat(
-        color !== "default"
-          ? capitalize(color)
-          : "",
+        color !== "default" ? capitalize(color) : "",
       )
     ],
     disabled && classes.disabled,
