@@ -1,10 +1,10 @@
 import {
   dataTree,
 } from "./randomData.js";
-import * as rlp from "./../../src/rlp.js";
+import * as rlp from "../src/rlp.js";
 import {
   rlp as rlp_decoder,
-} from "../../deps.js";
+} from "../deps.js";
 const ref = { rlp: rlp_decoder };
 const cps = (f) => {
   for (var t = Date.now(), i = 0; Date.now() - t < 1000; ++i) {
@@ -25,7 +25,6 @@ const npmCps = cps(() =>
 console.log("- Eth-Lib: " + liteCps + " calls per second.");
 console.log("- Reference: " + npmCps + " calls per second.");
 console.log(
-  "- Eth-Lib is: " + (liteCps / npmCps).toFixed(2) + " " + (liteCps > npmCps
-    ? "faster"
-    : "slower") + " than reference.",
+  "- Eth-Lib is: " + (liteCps / npmCps).toFixed(2) + " " +
+    (liteCps > npmCps ? "faster" : "slower") + " than reference.",
 );

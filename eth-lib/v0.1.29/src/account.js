@@ -1,11 +1,13 @@
 import * as Bytes from "./bytes.js";
 import * as Nat from "./nat.js";
 import {
+  Buffer as BufferModule,
   elliptic,
 } from "../deps.js";
 import * as rlp from "./rlp.js";
 import { keccak256, keccak256s } from "./hash.js";
 
+const { Buffer } = BufferModule;
 const secp256k1 = new (elliptic.ec)("secp256k1");
 
 const create = (entropy) => {
