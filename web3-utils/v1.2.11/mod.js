@@ -21,8 +21,8 @@ import {
   Buffer as BufferModule,
   ethjsUnit,
   randombytes,
-} from "../deps.js";
-import * as utils from "./utils.js";
+} from "./deps.js";
+import * as utils from "./src/utils.js";
 
 const { Buffer } = BufferModule;
 
@@ -431,11 +431,11 @@ export {
   utf8ToHex as fromUtf8,
   utf8ToHex as stringToHex,
   utf8ToHex,
-} from "./utils.js";
+} from "./src/utils.js";
 
 export {
   soliditySha3,
   soliditySha3Raw,
-} from "./soliditySha3.js";
+} from "./src/soliditySha3.js";
 
 export const unitMap = ethjsUnit.unitMap;

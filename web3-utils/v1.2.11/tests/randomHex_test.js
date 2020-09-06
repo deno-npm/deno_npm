@@ -1,6 +1,6 @@
 import {
   randomHex,
-} from "../src/index.js";
+} from "../mod.js";
 import * as testing from "../../../test_deps.js";
 
 // Expect 2 chars per bytes plus `0x` prefix

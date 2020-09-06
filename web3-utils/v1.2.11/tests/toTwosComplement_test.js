@@ -1,7 +1,7 @@
 import {
   padLeft,
   toTwosComplement,
-} from "../src/index.js";
+} from "../mod.js";
 import {
   BigNumber,
 } from "../deps.js";

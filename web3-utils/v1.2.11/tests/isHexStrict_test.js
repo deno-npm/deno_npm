@@ -1,6 +1,6 @@
 import {
   isHexStrict,
-} from "../src/index.js";
+} from "../mod.js";
 import {
   BN,
   BigNumber,

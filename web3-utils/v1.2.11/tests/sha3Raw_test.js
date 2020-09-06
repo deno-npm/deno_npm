@@ -1,7 +1,7 @@
 import * as testing from "../../../test_deps.js";
 import {
   sha3Raw,
-} from "../src/index.js";
+} from "../mod.js";
 import { Hash } from "../../../deps.js";
 
 const deno_sha3 = (str) => Hash.createHash("keccak256").update(str).toString();

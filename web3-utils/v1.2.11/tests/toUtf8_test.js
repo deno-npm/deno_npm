@@ -1,6 +1,6 @@
 import {
   toUtf8,
-} from "../src/index.js";
+} from "../mod.js";
 import * as testing from "../../../test_deps.js";
 
 var tests = [

@@ -1,6 +1,6 @@
 import {
   soliditySha3,
-} from "../src/index.js";
+} from "../mod.js";
 import {
   _,
   BN,

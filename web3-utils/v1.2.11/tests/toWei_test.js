@@ -2,7 +2,7 @@ import {
   isBN,
   toBN,
   toWei,
-} from "../src/index.js";
+} from "../mod.js";
 import * as testing from "../../../test_deps.js";
 
 Deno.test({
