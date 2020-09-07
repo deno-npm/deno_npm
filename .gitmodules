@@ -16,3 +16,6 @@
 [submodule "rlp"]
 	path = rlp
 	url = https://github.com/deno-npm/rlp
+[submodule "ethjs-signer"]
+	path = ethjs-signer
+	url = https://github.com/deno-npm/ethjs-signer
