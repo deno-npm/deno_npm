@@ -22,3 +22,6 @@
 [submodule "eth-lib"]
 	path = eth-lib
 	url = https://github.com/deno-npm/eth-lib
+[submodule "web3-utils"]
+	path = web3-utils
+	url = https://github.com/deno-npm/web3-utils
