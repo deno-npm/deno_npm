@@ -7,3 +7,6 @@
 [submodule "web3-eth-abi"]
 	path = web3-eth-abi
 	url = https://github.com/deno-npm/web3-eth-abi
+[submodule "web3-providers-ipc"]
+	path = web3-providers-ipc
+	url = https://github.com/deno-npm/web3-providers-ipc
