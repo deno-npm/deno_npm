@@ -19,3 +19,6 @@
 [submodule "ethjs-signer"]
 	path = ethjs-signer
 	url = https://github.com/deno-npm/ethjs-signer
+[submodule "eth-lib"]
+	path = eth-lib
+	url = https://github.com/deno-npm/eth-lib
