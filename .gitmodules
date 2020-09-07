@@ -13,3 +13,6 @@
 [submodule "ethjs-account"]
 	path = ethjs-account
 	url = https://github.com/deno-npm/ethjs-account
+[submodule "rlp"]
+	path = rlp
+	url = https://github.com/deno-npm/rlp
