@@ -10,3 +10,6 @@
 [submodule "web3-providers-ipc"]
 	path = web3-providers-ipc
 	url = https://github.com/deno-npm/web3-providers-ipc
+[submodule "ethjs-account"]
+	path = ethjs-account
+	url = https://github.com/deno-npm/ethjs-account
