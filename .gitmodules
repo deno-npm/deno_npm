@@ -31,3 +31,6 @@
 [submodule "web3-bzz"]
 	path = web3-bzz
 	url = https://github.com/deno-npm/web3-bzz
+[submodule "web3-core-helpers"]
+	path = web3-core-helpers
+	url = https://github.com/deno-npm/web3-core-helpers
