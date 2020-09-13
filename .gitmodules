@@ -37,3 +37,6 @@
 [submodule "web3-core-promievent"]
 	path = web3-core-promievent
 	url = https://github.com/deno-npm/web3-core-promievent
+[submodule "web3-providers-ws"]
+	path = web3-providers-ws
+	url = https://github.com/deno-npm/web3-providers-ws
