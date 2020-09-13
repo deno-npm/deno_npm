@@ -25,9 +25,9 @@
 [submodule "web3-utils"]
 	path = web3-utils
 	url = https://github.com/deno-npm/web3-utils
-[submodule "web3_bzz"]
-	path = web3_bzz
-	url = https://github.com/deno-npm/web3_bzz
 [submodule "web3-eth-iban"]
 	path = web3-eth-iban
 	url = https://github.com/deno-npm/web3-eth-iban
+[submodule "web3-bzz"]
+	path = web3-bzz
+	url = https://github.com/deno-npm/web3-bzz
