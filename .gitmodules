@@ -40,3 +40,12 @@
 [submodule "web3-providers-ws"]
 	path = web3-providers-ws
 	url = https://github.com/deno-npm/web3-providers-ws
+[submodule "web3-core-requestmanager"]
+	path = web3-core-requestmanager
+	url = https://github.com/deno-npm/web3-core-requestmanager.git
+[submodule "web3-core"]
+	path = web3-core
+	url = https://github.com/deno-npm/web3-core
+[submodule "web3-providers-http"]
+	path = web3-providers-http
+	url = https://github.com/deno-npm/web3-providers-http
